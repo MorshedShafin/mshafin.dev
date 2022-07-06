@@ -1,0 +1,46 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+a:link,a:visited,a:active,a:hover{
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.logo{
+    width: 50px;
+    border-radius: 9999px;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: teal;
+    padding: 10px;
+}
+
+.links{
+    display: flex;
+}
+
+.links li a,.btngroup a {
+    color: #fff;
+    margin: 0 10px;
+}
