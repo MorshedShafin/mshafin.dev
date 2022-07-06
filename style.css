@@ -1,46 +1,59 @@
-*,*::after,*::before{
-    padding: 0;
-    margin: 0;
-    box-sizing: inherit;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
-html{
+* {
     box-sizing: border-box;
-    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-}
-
-a:link,a:visited,a:active,a:hover{
+li, a, button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
     text-decoration: none;
 }
 
-ul,li{
-    list-style: none;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
 
-.logo{
+.logo {
+    cursor: pointer;
     width: 50px;
     border-radius: 9999px;
 }
 
-.topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: teal;
-    padding: 10px;
+.nav-links {
+    list-style: none;
 }
 
-.links{
-    display: flex;
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
 }
 
-.links li a,.btngroup a {
-    color: #fff;
-    margin: 0 10px;
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
 }
